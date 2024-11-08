@@ -4,13 +4,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #333; /* Color de texto más oscuro para mejor contraste */
     line-height: 1.6;
 }
 
 /* Encabezado */
 header {
-    color: white;
+    color: #ffffff; /* Texto blanco para contraste */
+    background-color: #2c6e49; /* Un verde más oscuro para el fondo */
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -35,8 +36,8 @@ nav ul li {
 }
 
 nav ul li button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Texto blanco */
     font-weight: bold;
     padding: 15px 30px;  /* Aumenté el padding para hacer el botón más grande */
     border-radius: 30px;  /* Aumenté el radio de los bordes para hacerlos más redondeados */
@@ -46,9 +47,10 @@ nav ul li button {
     font-size: 1.5em;  /* Aumenté el tamaño de la fuente */
 }
 
+/* Cambio para el estado hover del botón */
 nav ul li button:hover {
-    background-color: #333;
-    border-color: #333;
+    background-color: #333; /* Fondo oscuro al pasar el cursor */
+    border-color: #333; /* Borde oscuro */
 }
 
 /* Contenido principal */
@@ -56,13 +58,13 @@ main {
     max-width: 1100px;
     margin: 30px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff; /* Fondo blanco para el contenido */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
-    color: #4CAF50;
+    color: #4CAF50; /* Verde oscuro para los encabezados */
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -74,7 +76,7 @@ main p {
 
 /* Estilo para las imágenes */
 img {
-    max-width: 200px; /* Ancho fijo */ /* Altura fija */
+    max-width: 200px; /* Ancho fijo */
     object-fit: cover; /* Mantiene proporciones y recorta si es necesario */
     border-radius: 8px; /* Bordes redondeados */
     display: block; /* Hace que cada imagen sea un bloque */
@@ -85,8 +87,8 @@ img {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #2c6e49; /* Fondo verde oscuro para mayor contraste */
+    color: white; /* Texto blanco */
     position: fixed;
     width: 100%;
     bottom: 0;

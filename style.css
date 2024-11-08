@@ -38,12 +38,12 @@ nav ul li button {
     background-color: #4CAF50;
     color: white;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 15px 30px;  /* Aumenté el padding para hacer el botón más grande */
+    border-radius: 30px;  /* Aumenté el radio de los bordes para hacerlos más redondeados */
     border: 2px solid white;
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease;
-    font-size: 1em;
+    font-size: 1.5em;  /* Aumenté el tamaño de la fuente */
 }
 
 nav ul li button:hover {
@@ -73,7 +73,6 @@ main p {
 }
 
 /* Estilo para las imágenes */
-/* Estilo para las imágenes */
 img {
     max-width: 200px; /* Ancho fijo */ /* Altura fija */
     object-fit: cover; /* Mantiene proporciones y recorta si es necesario */
@@ -81,8 +80,6 @@ img {
     display: block; /* Hace que cada imagen sea un bloque */
     margin: 0 auto; /* Centra las imágenes */
 }
-
-
 
 /* Pie de página */
 footer {

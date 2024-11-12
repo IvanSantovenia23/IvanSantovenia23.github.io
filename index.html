@@ -19,8 +19,8 @@
         </nav>
 
         <!-- Buscador -->
-        <form action="https://www.google.com/search" method="get" class="search-form">
-            <input type="text" name="q" placeholder="Buscar en Google..." required>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Buscar en el sitio...">
             <button type="submit">Buscar</button>
         </form>
     </header>
@@ -30,10 +30,16 @@
         <p>Hola, soy Iván. Soy Ingeniero Informático y me encanta explorar nuevos proyectos y retos. En mi tiempo libre disfruto del deporte y mis aficiones.</p>
         <img src="./source/fotos/yo.jpg" alt="yo">
         <p>Este es mi enlace: <a href="https://github.com/IvanSantoveniaMantecon">haz clic aquí</a></p>
+
+        <!-- Resultados de búsqueda -->
+        <div id="search-results"></div>
     </main>
 
     <footer>
         <p>&copy; 2024 Mi Sitio Web</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>

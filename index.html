@@ -11,28 +11,29 @@
         <h1>Mi Sitio Web</h1>
         <nav>
             <ul>
-                <li><button onclick="location.href='index.html'">Información Personal</button></li>
-                <li><button onclick="location.href='aficiones.html'">Aficiones</button></li>
-                <li><button onclick="location.href='laboral.html'">Proyectos Laborales</button></li>
-                <li><button onclick="location.href='extra.html'">Información Extra</button></li>
+                <li><button onclick="location.href='index.html'" aria-label="Ir a Información Personal">Información Personal</button></li>
+                <li><button onclick="location.href='aficiones.html'" aria-label="Ir a Aficiones">Aficiones</button></li>
+                <li><button onclick="location.href='laboral.html'" aria-label="Ir a Proyectos Laborales">Proyectos Laborales</button></li>
+                <li><button onclick="location.href='extra.html'" aria-label="Ir a Información Extra">Información Extra</button></li>
             </ul>
         </nav>
 
         <!-- Buscador -->
-        <form id="search-form">
-            <input type="text" id="search-input" placeholder="Buscar en el sitio...">
-            <button type="submit">Buscar</button>
+        <form id="search-form" role="search">
+            <label for="search-input" class="visually-hidden">Buscar en el sitio:</label>
+            <input type="text" id="search-input" placeholder="Buscar en el sitio..." aria-label="Campo de búsqueda">
+            <button type="submit" aria-label="Botón de búsqueda">Buscar</button>
         </form>
     </header>
 
     <main>
         <h2>Sobre mí</h2>
         <p>Hola, soy Iván. Soy Ingeniero Informático y me encanta explorar nuevos proyectos y retos. En mi tiempo libre disfruto del deporte y mis aficiones.</p>
-        <img src="./source/fotos/yo.jpg" alt="yo">
+        <img src="./source/fotos/yo.jpg" alt="Foto de Iván" />
         <p>Este es mi enlace: <a href="https://github.com/IvanSantoveniaMantecon">haz clic aquí</a></p>
 
         <!-- Resultados de búsqueda -->
-        <div id="search-results"></div>
+        <div id="search-results" role="region" aria-live="polite"></div>
     </main>
 
     <footer>
